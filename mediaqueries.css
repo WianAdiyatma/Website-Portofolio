@@ -12,6 +12,11 @@
   #desktop-nav {
     display: none;
   }
+
+  #about {
+        height: 85vh;
+        margin-bottom: 5.5rem;
+    
   #hamburger-nav {
     display: flex;
   }
@@ -47,7 +52,7 @@
   }
   #profile {
     height: 38vh;
-    margin-bottom: 0;
+    margin-bottom: 24rem;
   }
   article {
     font-size: 1rem;
