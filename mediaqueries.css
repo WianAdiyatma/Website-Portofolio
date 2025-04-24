@@ -83,7 +83,7 @@
 
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 42vw;
     justify-content: center;
   }
   .section__text__p2 {
@@ -94,5 +94,13 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  #contact {
+    margin-top: 5.5rem;
+  }
+
+  #projects {
+    margin-top: 3.5rem;
   }
 }
