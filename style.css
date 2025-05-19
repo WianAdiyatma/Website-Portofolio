@@ -3,8 +3,78 @@
     padding: 0;
 }
 
+.fa-solid.fa-check-fa-xl {
+    width: 1px;
+    height: 1px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode overrides */
+body.dark {
+    color: #f0f0f0; /* Light gray text */
+    background: #121212; /* Dark background */
+  }
+
+  body.dark .darkMods {
+    background-color: #121212;
+  }
+
+  body.dark .hamburger-icon span {
+    background-color: white;
+  }
+
+  body.dark p, body.dark .btn-color-2 {
+    color: #bbb;
+  }
+
+  body.dark .btn-color-2:hover {
+    color: white;
+  }
+  body.dark .btn-color-1:hover {
+    background-color: #6b6b6b;
+  }
+
+  /* body.dark .icon {
+    border-bottom: 1px solid #fff;
+  } */
+
+  body.dark h3, body.dark h2 {
+    color: white
+  }
+
+  body.dark .details-container, body.dark .contact-info-upper-container {
+    background-color: rgb(53, 53, 53, .0);
+  }
+
+  /* Fix links */
+body.dark a {
+    color: #7fadff !important; /* Light blue links */
+  }
+
+  body.dark .menu-links {
+    background-color: #121212;
+  }
+
+  body.dark .menu-links a:hover {
+    background-color: #333;
+  }
+
+
+.dark {
+    background-color: black;
+}
+
+/* #display {
+    display: none;
+} */
+
+i {
+    color: #333; /* Dark color for visibility on white */
+    font-size: 1.2rem; /* Adjust icon size */
+    transition: all 0.3s ease; /* Smooth transitions */
 }
 
 html {
@@ -163,11 +233,12 @@ section {
      display: flex;
      height: 350px;
      width: 350px;
-     margin: auto 0;
+     justify-content: center;
     }
     
-    .section__pic-container img {
+    #profile img {
         border-radius: 50%;
+        height: 20rem;
     }
 
 .section__text {
@@ -198,21 +269,73 @@ font-size: 1.1rem;
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     gap: 1rem;
 }
 
-/* icons */
-.icon {
+#socials-container i {
     cursor: pointer;
-    height: 2rem;
 }
 
+
 /* button */
+.darkMods {
+    background-color: white;
+    border: 1px solid #ddd;
+    opacity: 0.8;
+    padding: 10px;
+    position: fixed;
+    border-radius: 10px;
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer; /* Makes it obvious it's clickable */
+}
+
+/* body.dark .darkMods i:first-child {
+    border-right: 2px solid white;
+    padding-right: 10px;
+} */
+
+/* body.dark .darkMods i:nth-child(2) {
+    border-right: none;
+    padding-left: 10px;
+} */
+
+
+/* .darkMods i:first-child {
+    border-right: 2px solid black;
+    padding-right: 10px;
+} */
+
+/* .darkMods i:nth-child(2) {
+    border-right: none;
+    padding-left: 10px;
+} */
+
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.darkMode {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.darkMode:hover {
+    text-decoration: none;
+    background-color: #242424;
+    color: white;
 }
 
 .btn {
@@ -256,7 +379,7 @@ font-size: 1.1rem;
 
 /* About */
 #about{
-    position: relative;
+    z-index: 1;
 }
 
 .about-containers{
@@ -268,6 +391,8 @@ font-size: 1.1rem;
 .about-details-container{
     justify-content: center;
     flex-direction: column;
+    line-height: 1.5;
+
 }
 
 .about-containers, .about-details-container{
@@ -275,7 +400,7 @@ font-size: 1.1rem;
 }
 
 .about-pic {
-    border-radius: 2rem;
+    height: 20rem;
 }
 
 /* .arrow {
@@ -294,6 +419,11 @@ font-size: 1.1rem;
     text-align: center;
 }
 
+
+.details-container i {
+    margin: 1rem 0 0 0;
+}
+
 .section-container{
     gap: 4rem;
     height: 80%;
@@ -305,7 +435,7 @@ font-size: 1.1rem;
 
 /* experience */
 #experience {
-    position: relative;
+    z-index: 1;
 }
 .experience-sub-title {
     color: rgb(85, 85, 85);
@@ -323,6 +453,7 @@ font-size: 1.1rem;
 .article-container {
     display: flex;
     text-align: initial;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
@@ -332,8 +463,7 @@ font-size: 1.1rem;
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
 article .icon {
@@ -342,7 +472,7 @@ article .icon {
 
 /* project */
 #projects{
-    position: relative;
+    z-index: 1;
 }
 
 .color-container{

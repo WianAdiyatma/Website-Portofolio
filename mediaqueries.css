@@ -13,9 +13,14 @@
     display: none;
   }
 
+  .section__text {
+    margin-top: 8vh;
+  }
+
   #about {
         height: 85vh;
         margin-bottom: 8rem;
+        margin-top: 8rem;
   }
     
   #hamburger-nav {
@@ -34,12 +39,15 @@
     height: fit-content;
   }
   section {
-    margin: 0 5%;
+    margin: 0 5% auto;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    height: 40vh;
+    margin: 0px auto;
+  }
+
+  .section__pic-container img {
+    height: 40vh;
   }
   .about-containers {
     margin-top: 0;
@@ -89,7 +97,7 @@
 
   .section__pic-container {
     width: auto;
-    height: 42vw;
+    height: 42vh;
     justify-content: center;
   }
   .section__text__p2 {
@@ -104,6 +112,14 @@
 
   #contact {
     margin-top: 8rem;
+  }
+
+  .contact-info-upper-container {
+    padding: 0.5rem; 
+  }
+
+  .contact-info-container {
+    margin: 0.5rem;
   }
 
   #projects {
